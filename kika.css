@@ -1,0 +1,662 @@
+/* ==UserStyle==
+@name           zone D1
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    dark neon
+@author         punitxsingh
+==/UserStyle== */
+
+@-moz-document url-prefix("kirka.io") {}
+
+@font-face {
+    font-family: 'mine';
+    src: url('https://raw.githubusercontent.com/punitxsingh/oie/main/Mine.ttf');
+}
+
+#app>div.interface.text-2>div.background {
+    background-image: url(https://i.pinimg.com/originals/6e/06/0d/6e060de8fd3bbc251ec266bc96efdd83.gif) !important;
+    background-size: cover !important;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+/*https://i.pinimg.com/originals/91/96/32/919632d3c2d04ab12e56f886a428c528.gif*/
+/*https://i.pinimg.com/originals/6e/4c/14/6e4c14af5c29f51f6493382f48d1a428.gif*/
+/*https://i.pinimg.com/originals/6e/06/0d/6e060de8fd3bbc251ec266bc96efdd83.gif*/
+#app>div.interface.text-2>div.background>div.pattern-bg,
+#app>div.interface.text-2>div.background>div.bg-radial {
+    display: none !important;
+}
+
+.ad-bottom,
+.ad-left {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.logo {
+    display: none;
+}
+
+@keyframes rgb {
+
+    0%,
+    100% {
+        color: rgb(255, 0, 0);
+    }
+
+    20% {
+        color: rgb(255, 165, 0);
+    }
+
+    40% {
+        color: rgb(255, 255, 0);
+    }
+
+    60% {
+        color: rgb(0, 255, 0);
+    }
+
+    80% {
+        color: rgb(255, 0, 255);
+    }
+}
+
+#invite-btn {
+    backdrop-filter: blur(5px) !important;
+    background-color: #ffffff34 !important;
+    border-radius: 30% !important;
+    font-size: 1.9em !important;
+}
+
+.border-top.border,
+.border-bottom.border {
+    display: none !important;
+}
+
+#invite-btn:hover {
+    transform: scale(116%)
+}
+
+#invite-btn .v-popover {
+    display: none !important;
+}
+
+.tooltip.copy-text,
+.tooltip-arrow.popover-arrow {
+    display: none !important;
+}
+
+.player-cont .heads,
+.heads-right.in-lobby,
+.heads-left1.in-lobby,
+.heads-left2.in-lobby {
+    font-family: mine;
+    transition: 0.4s ease !important;
+}
+
+.player-cont .heads:hover,
+.heads-right.in-lobby:hover,
+.heads-left1.in-lobby:hover,
+.heads-left2.in-lobby:hover {
+    background-color: rgba(255, 255, 255, 0.123);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+.player-cont .heads .nickname,
+.heads-right.in-lobby .nickname,
+.heads-left1.in-lobby .nickname,
+.heads-left2.in-lobby .nickname {
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    font-size: 3.5em !important;
+    margin-right: 0.65em;
+
+}
+
+.player-cont .heads-right.in-lobby .nickname,
+.heads-left1.in-lobby .nickname,
+.heads-left2.in-lobby .nickname {
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-size: 3em !important;
+}
+
+.player-cont .heads-right.in-lobby .levels,
+.heads .levels,
+.heads-left1.in-lobby .levels,
+.heads-left2.in-lobby .levels {
+    background: none !important;
+    font-size: 3.2em !important;
+    margin: 0 0 6px 0 !important;
+    color: rgb(197, 35, 197) !important;
+}
+
+.player-cont .heads-right.in-lobby .klo,
+.heads .klo,
+.heads-left1.in-lobby .klo,
+.heads-left2.in-lobby .klo {
+    display: none
+}
+
+.player-cont .heads-right.in-lobby .clan-tag,
+.heads .clan-tag,
+.heads-left1.in-lobby .clan-tag,
+.heads-left2.in-lobby .clan-tag {
+    animation: rgb 5s linear infinite;
+    font-size: 2.2em !important;
+    margin: 0 0 -1em 0 !important;
+    letter-spacing: 2px;
+}
+
+.player-cont .heads-right.in-lobby .clan-tag,
+.heads-left1.in-lobby .clan-tag,
+.heads-left2.in-lobby .clan-tag {
+    font-size: 2em !important;
+    margin: 0 0 -0.79em 0 !important;
+    letter-spacing: 1px;
+}
+
+.soc-group:nth-child(1),
+.soc-group:nth-child(2) {
+    display: none;
+}
+
+.settings-and-socicons .card-cont.settings.card-1:hover {
+    transform: rotate(90deg) scale(0.7);
+    opacity: 100%;
+}
+
+.settings-and-socicons .card-cont.settings.card-1 {
+    max-width: 20%;
+    background: none;
+    margin: 1% 0 0 85%;
+    border: none;
+    transform: scale(0.7);
+    opacity: 70%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.right-interface .quests,
+.right-interface .quests .quest {
+    background-color: rgba(45, 45, 45, .16) !important;
+    backdrop-filter: blur(10px) !important;
+    border: none !important;
+}
+
+.quests {
+    position: fixed;
+    margin-top: 4em;
+    right: -412px;
+    width: 450px !important;
+    padding: 10px 10px 0 20% !important;
+    opacity: 65%;
+    transition: right 0.4s ease-in-out;
+}
+
+.quests:hover {
+    right: 0;
+    opacity: 100%;
+    padding: 10px 10px 0 10px !important;
+}
+
+.left-interface .card-cont.user-info .progress-line,
+.quests .progress-line {
+    background-color: #f0f8ffba !important;
+}
+
+.left-interface .card-cont.user-info .progress,
+.quests .progress {
+    background-color: rgba(0, 0, 0, .54) !important;
+}
+
+.quests .list .reward.coins,
+.reward.xp,
+.reward.diamonds,
+.reward.item {
+    background-color: rgba(184, 182, 182, .42) !important;
+       
+}
+
+.quests .tabs .tab.daily,
+.tab.event {
+    background-color: rgba(255, 255, 255, .45) !important;
+}
+
+.quests .tabs .tab.daily.selected:hover,
+.tab.event:hover {
+    background-color: rgba(131, 129, 129, .4) !important;
+}
+
+.play-content #play-btn {
+    border: calc(0.08 * 4rem) solid transparent;
+    cursor: pointer;
+    border-radius: 0px !important;
+    background: linear-gradient(#121213, #121213),
+        linear-gradient(#121213 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),
+        linear-gradient(90deg, #FF6D1B, #FFEE55, #5BFF89, #4D8AFF, #6B5FFF, #FF64F9, #FF6565);
+    background-origin: border-box;
+    background-clip: padding-box, border-box, border-box;
+    background-size: 200%;
+    animation: animate 2s infinite linear;
+    padding: 20px 20px !important;
+    width: 90%;
+    
+}
+
+.play-content #play-btn::before {
+    content: '';
+    background: linear-gradient(90deg, #FF6D1B, #FFEE55, #5BFF89, #4D8AFF, #6B5FFF, #FF64F9, #FF6565);
+    height: 30%;
+    width: 60%;
+    position: absolute;
+    bottom: -20%;
+    z-index: -5;
+    background-size: 200%;
+    animation: animate 2s infinite linear;
+    filter: blur(calc(0.8 * 4rem));
+}
+
+.play-content #play-btn:hover::before {
+    animation: animate 0.5s infinite linear !important;
+}
+
+.play-content #play-btn:hover {
+    background: linear-gradient(#121213, #121213),
+        linear-gradient(#121213 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),
+        linear-gradient(90deg, #FF6D1B, #FFEE55, #5BFF89, #4D8AFF, #6B5FFF, #FF64F9, #FF6565) !important;
+    background-origin: border-box !important;
+    background-clip: padding-box, border-box, border-box !important;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0
+    }
+
+    100% {
+        background-position: 200%
+    }
+}
+
+.play-content #play-btn:hover .text {
+    letter-spacing: 3px;
+}
+
+.play-content #play-btn .border-top,
+.play-content #play-btn .border-bottom {
+    background: none;
+}
+
+.play-content .select-mod,
+.play-content .select-region {
+    background-color: rgba(45, 45, 45, .16) !important;
+    backdrop-filter: blur(5px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: all 0.2s ease;
+    
+}
+
+.play-content .select-mod {
+    width: 91% !important;
+}
+
+.play-content .select-region img {
+    display: none
+}
+
+.play-content .select-region {
+    transform: scale(0.8) !important;
+}
+
+.play-content .select-region:hover img {
+    display: inline;
+}
+
+.play-content .select-mod:hover,
+.select-region:hover {
+    background: rgba(152, 149, 149, .39) !important;
+}
+
+.lobby-buttons,
+.play-content .play-content-up {
+    display: flex !important;
+    width: 97.5% !important;
+}
+
+#join-btn,
+#create-btn {
+    background-color: rgba(45, 45, 45, .16) !important;
+    backdrop-filter: blur(5px) !important;
+    border-radius: 7px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: all 0.2s ease;
+}
+
+#join-btn:hover,
+#create-btn:hover {
+    background-color: rgba(131, 129, 129, .48) !important;
+}
+
+.lobby-buttons #ready-btn,
+#leave-btn {
+    background-color: rgba(45, 45, 45, .16) !important;
+    backdrop-filter: blur(5px) !important;
+    border-radius: 7px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: all 0.2s ease;
+}
+
+.lobby-buttons #ready-btn:hover,
+#leave-btn:hover {
+    background-color: rgba(131, 129, 129, .48) !important;
+}
+
+.left-interface .card-cont.avatar-info,
+.progress-label {
+    display: none !important;
+}
+
+.left-interface .card-cont.user-info {
+    height: 6em;
+    min-height: 85px;
+    background-color: rgba(45, 45, 45, .48) !important;
+    backdrop-filter: blur(10px) !important;
+    border: none !important;
+    margin: 3px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+.left-interface .card-cont.user-info:hover{
+transform: scale(1.05); 
+}
+
+.left-interface .card-cont.user-info::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, .16), transparent);
+    transform: skewX(-25deg);
+    animation: shimmerEffect 2.6s infinite;
+    z-index: 1;
+}
+
+.left-interface .card-cont.user-info .level-cont {
+    color: rgb(255, 0, 255);
+    background-color: rgba(226, 213, 213, .48);
+    padding: 2px;
+    border-radius: 5px;
+
+}
+
+.left-interface .card-cont.user-info .level-value {
+    background-color: rgba(0, 0, 0, .54) !important;
+}
+
+.left-interface .moneys {
+    width: 97.7%;
+    background-color: rgba(45, 45, 45, .48) !important;
+    backdrop-filter: blur(10px) !important;
+    border: none !important;
+    padding: 10px 0 10px 5px;
+    margin: 3px;
+    position: relative;
+    overflow: hidden;
+}
+.left-interface .moneys::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, .2), transparent);
+    transform: skewX(-25deg);
+    animation: shimmerEffect 2.6s infinite;
+    z-index: 1;
+}
+
+.left-interface .moneys .card-cont.money,.card-cont.money.diamonds{
+    background-color: rgba(226, 213, 213, .21);
+    border-radius: 5px;
+        border: none !important;
+    width: 100%;
+}
+@keyframes shimmerEffect {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 200%;
+    }
+}
+
+.left-icons {
+    position: absolute !important;
+    bottom: 0% !important;
+    left: 0% !important;
+    top: 19.7% !important; 
+    height: fit-content !important;
+    margin: 0 0 0 3px;
+    padding: 5px;
+    background-color: rgba(45, 45, 45, .48) !important;
+    backdrop-filter: blur(10px) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.left-icons::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        /* Horizontal lines */
+        linear-gradient(90deg, transparent 10%, #00f7ff 10%, #00f7ff 10.5%, transparent 10.5%),
+        linear-gradient(90deg, transparent 50%, #00f7ff 50%, #00f7ff 50.5%, transparent 50.5%),
+        linear-gradient(90deg, transparent 80%, #ff00ee 80%, #ff00ee 80.5%, transparent 80.5%),
+        /* Vertical lines */
+        linear-gradient(0deg, transparent 20%, #00f7ff 20%, #00f7ff 20.5%, transparent 20.5%),
+        linear-gradient(0deg, transparent 60%, #ff00ee 60%, #ff00ee 60.5%, transparent 60.5%),
+        linear-gradient(0deg, transparent 90%, #00f7ff 90%, #00f7ff 90.5%, transparent 90.5%),
+        radial-gradient(circle at 10% 20%, transparent 1.5%, #00f7ff 1.5%, #00f7ff 2%, transparent 2%),
+        radial-gradient(circle at 50% 60%, transparent 1.5%, #ff00ee 1.5%, #ff00ee 2%, transparent 2%),
+        radial-gradient(circle at 80% 90%, transparent 1.5%, #00f7ff 1.5%, #00f7ff 2%, transparent 2%);
+    background-size: 100% 100%;
+    opacity: 0.3;
+    z-index: 1;
+    pointer-events: none;
+
+}
+
+.left-icons::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(90deg, transparent, #00f7ff, #00f7ff, transparent),
+      
+        linear-gradient(0deg, transparent, #00f7ff, #00f7ff, transparent);
+    background-size: 40% 2px, 2px 30%;
+    background-position: -100% 20%, 10% -30%;
+    background-repeat: no-repeat;
+    filter: blur(1px);
+    opacity: 0.7;
+    z-index: 2;
+    animation: circuit1 4s infinite;
+    pointer-events: none;
+
+}
+
+.left-icons {
+    position: relative; 
+}
+
+.left-icons .text-icon {
+    display: none !important;
+}
+
+.left-icons > *:first-child::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: 
+        linear-gradient(0deg, transparent, #ff00ee, #ff00ee, transparent),
+      
+        linear-gradient(90deg, transparent, #ff00ee, #ff00ee, transparent);
+    background-size: 2px 40%, 50% 2px;
+    background-position: 80% -100%, -50% 60%;
+    background-repeat: no-repeat;
+    filter: blur(1px);
+    opacity: 0.7;
+    z-index: 2;
+    animation: circuit2 5s infinite;
+    animation-delay: 1s;
+}
+
+.left-icons > *:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: radial-gradient(circle at 50% 60%, #ff00ee 0%, #ff00ee 30%, transparent 70%);
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 3;
+    animation: junction-pulse 4s infinite;
+    animation-delay: 3s;
+}
+
+.left-icons > *:last-child::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: 
+        linear-gradient(90deg, transparent, #00f7ff, #00f7ff, transparent),
+   
+        linear-gradient(90deg, transparent, #ff00ee, #ff00ee, transparent);
+    background-size: 60% 2px, 30% 2px;
+    background-position: -60% 90%, -30% 30%;
+    background-repeat: no-repeat;
+    filter: blur(1px);
+    opacity: 0.7;
+    z-index: 2;
+    animation: circuit3 6s infinite;
+    animation-delay: 2s;
+}
+
+@keyframes circuit1 {
+    0% {
+        background-position: -100% 20%, 10% -30%;
+        opacity: 0.1;
+    }
+    20% {
+        opacity: 0.8;
+    }
+    40% {
+        background-position: 10% 20%, 10% -30%;
+        opacity: 0.8;
+    }
+    50% {
+        background-position: 10% 20%, 10% 20%;
+        opacity: 0.8;
+    }
+    80% {
+        background-position: 10% 20%, 10% 100%;
+        opacity: 0.8;
+    }
+    100% {
+        background-position: 10% 20%, 10% 100%;
+        opacity: 0.1;
+    }
+}
+
+@keyframes circuit2 {
+    0% {
+        background-position: 80% -100%, -50% 60%;
+        opacity: 0.1;
+    }
+    20% {
+        opacity: 0.8;
+    }
+    40% {
+        background-position: 80% 60%, -50% 60%;
+        opacity: 0.8;
+    }
+    50% {
+        background-position: 80% 60%, -50% 60%;
+        opacity: 0.8;
+    }
+    80% {
+        background-position: 80% 60%, 100% 60%;
+        opacity: 0.8;
+    }
+    100% {
+        background-position: 80% 60%, 100% 60%;
+        opacity: 0.1;
+    }
+}
+
+@keyframes circuit3 {
+    0% {
+        background-position: -60% 90%, -30% 30%;
+        opacity: 0.1;
+    }
+    40% {
+        background-position: 100% 90%, -30% 30%;
+        opacity: 0.8;
+    }
+    60% {
+        background-position: 100% 90%, 100% 30%;
+        opacity: 0.8;
+    }
+    100% {
+        background-position: 100% 90%, 100% 30%;
+        opacity: 0.1;
+    }
+}
+
+@keyframes junction-pulse {
+    0%, 100% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    50% {
+        opacity: 0.7;
+        transform: scale(1.2);
+    }
+}
+.left-icons > * {
+padding: 20px !important;
+    width: fit-content !important;
+margin: 5px 0 0 0;
+    border: none !important;
+        background-color: rgba(226, 213, 213, .21) !important;
+    border-radius: 5px !important;
+}
+
+.left-icons .text-icon {
+    display: none !important;
+}
+
